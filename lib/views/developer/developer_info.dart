@@ -183,7 +183,7 @@ class DeveloperInfo extends StatelessWidget {
   }
 
   void _openEmail(String email, String subject, String body) async {
-    final Uri _emailLaunchUri = Uri(
+    final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
       path: email,
       queryParameters: {
@@ -191,7 +191,7 @@ class DeveloperInfo extends StatelessWidget {
         'body': body,
       },
     );
-    final String url = _emailLaunchUri.toString();
+    final String url = emailLaunchUri.toString();
     if (await canLaunch(url)) {
       await launch(url);
     } else {
