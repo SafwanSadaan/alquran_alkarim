@@ -5,8 +5,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'core/cache_helper.dart';
 import 'core/helper_methods.dart';
 import 'provider/theme_provider.dart';
-import 'views/constant/constants.dart';
-import 'views/splash/view.dart';
+import 'core/constant/constants.dart';
+import 'views/widget/splash/view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

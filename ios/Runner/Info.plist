@@ -33,6 +33,10 @@
 	<string>نحتاج إلى الوصول إلى موقعك لتوفير تجربة أفضل.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>نحتاج إلى الوصول إلى موقعك حتى عندما لا يكون التطبيق قيد التشغيل.</string>
+	<!-- إذن استخدام الميكروفون -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>نحتاج إلى الوصول إلى الميكروفون لتحسين تجربة التعليم الصوتي.</string>
+    <key>UIBackgroundModes</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>

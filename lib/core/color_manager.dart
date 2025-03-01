@@ -4,6 +4,7 @@ class ColorManager {
   static Color orangeColor = const Color(0x2738050A);
   static Color goldenColor = const Color.fromARGB(255, 255, 145, 0);
   static Color yellowColor = const Color(0xff11f544);
+  static Color green = const Color(0xff11f544);
   static Color blueColor = const Color(0xff00A2B5);
   static Color offWhiteColor = const Color(0xffF4F0DB);
   static Color grey = const Color(0xffEEEEEE);
