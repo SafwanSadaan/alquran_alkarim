@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:store_redirect/store_redirect.dart';
 
 import '../../../core/helper_methods.dart';
 import '../../../core/constant/logo_name.dart';

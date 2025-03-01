@@ -120,7 +120,7 @@ class DeveloperInfo extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {
-                          _openURL('https://github.com/SafwanSaadan');
+                          _openURL('https://github.com/SafwanSadaan');
                         },
                         icon: CircleAvatar(
                           radius: 20,
