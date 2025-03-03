@@ -41,7 +41,9 @@ class _CustomSearchResultsState extends State<CustomSearchResults>
               },
               child: Card(
                 elevation: 0.2,
-                color: Theme.of(context).primaryColor.withOpacity(0.9),
+                color: index % 2 != 0
+                    ? Theme.of(context).textTheme.displayLarge?.color
+                    : Theme.of(context).textTheme.displayMedium?.color,
                 child: Container(
                   padding:
                       const EdgeInsets.symmetric(vertical: 5, horizontal: 8),
@@ -54,9 +56,9 @@ class _CustomSearchResultsState extends State<CustomSearchResults>
                             Text(
                               '${result.ayaText} [${result.suraNameAr}]',
                               textDirection: TextDirection.rtl,
-                              maxLines: 5, // تحديد عدد الأسطر
-                              overflow: TextOverflow
-                                  .ellipsis, // إضافة "..." إذا تجاوز النص المساحة
+                              // maxLines: 5, // تحديد عدد الأسطر
+                              // overflow: TextOverflow
+                              //     .ellipsis, // إضافة "..." إذا تجاوز النص المساحة
                               style: TextStyle(
                                 fontSize:
                                     arabicFontSize * 0.9, // تقليل حجم الخط
@@ -82,5 +84,4 @@ class _CustomSearchResultsState extends State<CustomSearchResults>
           }),
     );
   }
-  
 }
